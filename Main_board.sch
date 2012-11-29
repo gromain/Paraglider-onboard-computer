@@ -11200,6 +11200,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="S1" gate="S" pin="4"/>
 <wire x1="287.02" y1="226.06" x2="287.02" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="GND38" gate="1" pin="GND"/>
+<junction x="287.02" y="228.6"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="FB"/>
@@ -12144,6 +12145,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="MAX16054" gate="G$1" pin="IN"/>
 <wire x1="276.86" y1="226.06" x2="256.54" y2="226.06" width="0.1524" layer="91"/>
 <junction x="256.54" y="226.06"/>
+<junction x="276.86" y="226.06"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -12185,6 +12187,76 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,236.22,114.3,GND,GND1,,,,"/>
+<approved hash="102,1,236.22,111.76,PAD,GND,,,,"/>
+<approved hash="102,1,236.22,109.22,PAD,GND,,,,"/>
+<approved hash="102,1,236.22,106.68,PAD,GND,,,,"/>
+<approved hash="102,1,271.78,109.22,PAD,GND,,,,"/>
+<approved hash="102,1,271.78,111.76,PAD,GND,,,,"/>
+<approved hash="102,1,271.78,114.3,PGND,GND,,,,"/>
+<approved hash="201,1,236.22,114.3,GND,GND\, GND1,,,,"/>
+<approved hash="104,1,91.44,76.2,ATMEGA,AVCC1,AVCC,,,"/>
+<approved hash="104,1,91.44,60.96,ATMEGA,GND1,GND,,,"/>
+<approved hash="104,1,91.44,58.42,ATMEGA,GND2,GND,,,"/>
+<approved hash="104,1,91.44,96.52,ATMEGA,GND3,GND,,,"/>
+<approved hash="104,1,91.44,22.86,ATMEGA,PAD,GND,,,"/>
+<approved hash="104,1,91.44,45.72,ATMEGA,UGND,GND,,,"/>
+<approved hash="104,1,91.44,53.34,ATMEGA,UVCC,VCC,,,"/>
+<approved hash="104,1,91.44,99.06,ATMEGA,VCC1,VCC,,,"/>
+<approved hash="104,1,48.26,220.98,DS3231,VBAT,VEE,,,"/>
+<approved hash="103,1,17.78,215.9,DS3231,NC,GND,,,"/>
+<approved hash="103,1,17.78,213.36,DS3231,NC1,GND,,,"/>
+<approved hash="103,1,17.78,210.82,DS3231,NC2,GND,,,"/>
+<approved hash="103,1,17.78,208.28,DS3231,NC3,GND,,,"/>
+<approved hash="103,1,48.26,208.28,DS3231,NC4,GND,,,"/>
+<approved hash="103,1,48.26,210.82,DS3231,NC5,GND,,,"/>
+<approved hash="103,1,48.26,213.36,DS3231,NC6,GND,,,"/>
+<approved hash="103,1,48.26,215.9,DS3231,NC7,GND,,,"/>
+<approved hash="104,1,71.12,152.4,U$1,VDDD,VCC,,,"/>
+<approved hash="104,1,71.12,154.94,U$1,VDDA,VCC,,,"/>
+<approved hash="104,1,269.24,175.26,MCP73831,VIN,VUSB,,,"/>
+<approved hash="104,1,289.56,175.26,MCP73831,VBAT,V_BATT,,,"/>
+<approved hash="104,1,289.56,170.18,MCP73831,VSS,GND,,,"/>
+<approved hash="104,1,347.98,111.76,4050DP,VSS,GND,,,"/>
+<approved hash="104,1,347.98,127,4050DP,VDD,VCC,,,"/>
+<approved hash="104,1,345.44,58.42,U$2,J1-P15,GND,,,"/>
+<approved hash="104,1,345.44,63.5,U$2,J1-P18,VCC,,,"/>
+<approved hash="104,1,386.08,45.72,U$2,J2-P6,5V,,,"/>
+<approved hash="104,1,386.08,55.88,U$2,J2-P15,GND,,,"/>
+<approved hash="104,1,386.08,60.96,U$2,J2-P16,VCC,,,"/>
+<approved hash="104,1,386.08,58.42,U$2,J2-P17,GND,,,"/>
+<approved hash="104,1,386.08,63.5,U$2,J2-P18,VCC,,,"/>
+<approved hash="104,1,35.56,157.48,U$8,V+,VCC,,,"/>
+<approved hash="104,1,231.14,233.68,MAX16054,VCC,V_BATT,,,"/>
+<approved hash="104,1,223.52,38.1,U$9,IN,VIN,,,"/>
+<approved hash="104,1,254,38.1,U$9,OUT,VCC,,,"/>
+<approved hash="106,1,157.48,226.06,1PPS,,,,,"/>
+<approved hash="106,1,152.4,35.56,A0,,,,,"/>
+<approved hash="106,1,152.4,33.02,A1,,,,,"/>
+<approved hash="106,1,152.4,30.48,A2,,,,,"/>
+<approved hash="106,1,152.4,27.94,A3,,,,,"/>
+<approved hash="106,1,152.4,20.32,A4,,,,,"/>
+<approved hash="106,1,152.4,170.18,CLKIN,,,,,"/>
+<approved hash="106,1,152.4,50.8,D4,,,,,"/>
+<approved hash="106,1,152.4,71.12,D5*,,,,,"/>
+<approved hash="106,1,152.4,58.42,D6*,,,,,"/>
+<approved hash="106,1,152.4,180.34,FSYNC,,,,,"/>
+<approved hash="106,1,152.4,182.88,INT,,,,,"/>
+<approved hash="106,1,152.4,91.44,IO8,,,,,"/>
+<approved hash="106,1,152.4,93.98,IO9*,,,,,"/>
+<approved hash="106,1,152.4,88.9,MISO,,,,,"/>
+<approved hash="106,1,152.4,86.36,MOSI,,,,,"/>
+<approved hash="106,1,152.4,81.28,RXLED,,,,,"/>
+<approved hash="106,1,152.4,83.82,SCK,,,,,"/>
+<approved hash="106,1,152.4,53.34,TXLED,,,,,"/>
+<approved hash="115,1,142.24,234.463,MT3339,,,,,"/>
+<approved hash="115,1,68.58,246.871,FER,,,,,"/>
+<approved hash="115,1,60.397,215.9,CR2032,,,,,"/>
+<approved hash="115,1,281.94,230.751,S1,,,,,"/>
+<approved hash="115,1,200.508,133.198,FRAME1,,,,,"/>
+<approved hash="115,1,271.78,245.233,Q2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
