@@ -7141,9 +7141,9 @@ VCC</text>
 <text x="5.715" y="2.921" size="1.27" layer="26" font="vector" ratio="15" rot="R90">SCL</text>
 <text x="4.572" y="9.652" size="1.27" layer="25" font="vector" ratio="15" rot="SR0">HMC5883L</text>
 <pad name="GND" x="12.7" y="1.27" drill="1" diameter="1.9304" shape="square"/>
-<pad name="VCC" x="10.16" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="SDA" x="7.62" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="SCL" x="5.08" y="1.27" drill="1" diameter="1.9304"/>
+<pad name="VCC" x="10.16" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="SDA" x="7.62" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="SCL" x="5.08" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
 <hole x="2.54" y="15.24" drill="3.2"/>
 <hole x="15.24" y="15.24" drill="3.2"/>
 <wire x1="3.81" y1="1.905" x2="3.81" y2="0.635" width="0.127" layer="21"/>
@@ -7199,15 +7199,15 @@ VCC</text>
 <text x="0.7874" y="6.477" size="1.016" layer="25" font="vector" ratio="15" rot="SR270">ASDA</text>
 <text x="8.382" y="5.207" size="1.016" layer="25" font="vector" ratio="15" rot="SR270">VIO</text>
 <text x="8.382" y="2.921" size="1.016" layer="26" font="vector" ratio="15" rot="SMR90">VIO</text>
-<pad name="AUX_SDA" x="1.27" y="1.27" drill="1" diameter="1.9304" first="yes"/>
-<pad name="AUX_SCL" x="3.81" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="CLK" x="6.35" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="VIO" x="8.89" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="SDA" x="11.43" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="SCL" x="13.97" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="FSYNC" x="16.51" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="INT" x="19.05" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="GND" x="21.59" y="1.27" drill="1" diameter="1.9304"/>
+<pad name="AUX_SDA" x="1.27" y="1.27" drill="1" diameter="1.9304" shape="octagon" first="yes"/>
+<pad name="AUX_SCL" x="3.81" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="CLK" x="6.35" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="VIO" x="8.89" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="SDA" x="11.43" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="SCL" x="13.97" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="FSYNC" x="16.51" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="INT" x="19.05" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="GND" x="21.59" y="1.27" drill="1" diameter="1.9304" shape="square"/>
 <pad name="VDD" x="24.13" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
 <hole x="2.54" y="12.7" drill="3.2"/>
 <hole x="22.86" y="12.7" drill="3.2"/>
@@ -7281,12 +7281,12 @@ VCC</text>
 <text x="7.62" y="8.89" size="1.27" layer="21">MPU-6050</text>
 </package>
 <package name="TMP102">
-<pad name="V+" x="1.27" y="1.27" drill="1" diameter="1.9304" shape="square"/>
-<pad name="SDA" x="3.81" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="SCL" x="6.35" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="GND" x="8.89" y="1.27" drill="1" diameter="1.9304"/>
-<pad name="ADD0" x="3.81" y="11.43" drill="1" diameter="1.9304"/>
-<pad name="ALT" x="6.35" y="11.43" drill="1" diameter="1.9304"/>
+<pad name="V+" x="1.27" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="SDA" x="3.81" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="SCL" x="6.35" y="1.27" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="GND" x="8.89" y="1.27" drill="1" diameter="1.9304" shape="square"/>
+<pad name="ADD0" x="3.81" y="11.43" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="ALT" x="6.35" y="11.43" drill="1" diameter="1.9304" shape="octagon"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="0.635" width="0.127" layer="21"/>
 <wire x1="10.16" y1="1.905" x2="10.16" y2="12.7" width="0.127" layer="21" style="shortdash"/>
 <wire x1="0" y1="12.7" x2="0" y2="1.905" width="0.127" layer="21" style="shortdash"/>
@@ -10594,8 +10594,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND44" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND45" library="SparkFun" deviceset="GND" device=""/>
-<part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
-<part name="P+5" library="SparkFun" deviceset="VCC" device=""/>
 <part name="FRAME1" library="frames" deviceset="TABL_L" device=""/>
 <part name="U$6" library="SparkFun-Breakouts" deviceset="HMC5883" device=""/>
 <part name="U$7" library="SparkFun-Breakouts" deviceset="MPU-6050" device=""/>
@@ -10818,8 +10816,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <instance part="SUPPLY14" gate="G$1" x="391.16" y="45.72" rot="R270"/>
 <instance part="GND44" gate="1" x="393.7" y="58.42" rot="R90"/>
 <instance part="GND45" gate="1" x="340.36" y="58.42" rot="R270"/>
-<instance part="P+4" gate="1" x="391.16" y="63.5" rot="R270"/>
-<instance part="P+5" gate="1" x="342.9" y="63.5" rot="R90"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="299.72" y="0"/>
 <instance part="U$6" gate="G$1" x="78.74" y="170.18"/>
@@ -11643,19 +11639,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="P+3" gate="1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="J2-P16"/>
-<pinref part="P+4" gate="1" pin="VCC"/>
-<wire x1="391.16" y1="63.5" x2="386.08" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="63.5" x2="386.08" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="J2-P18"/>
-<junction x="386.08" y="63.5"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="J1-P18"/>
-<pinref part="P+5" gate="1" pin="VCC"/>
-<wire x1="342.9" y1="63.5" x2="345.44" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="4050D" gate="P" pin="VDD"/>
 <pinref part="P+7" gate="1" pin="VCC"/>
 </segment>
@@ -12148,7 +12131,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <junction x="276.86" y="226.06"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="V_CTRL" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="G$1" pin="G"/>
@@ -12221,12 +12204,9 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <approved hash="104,1,347.98,111.76,4050DP,VSS,GND,,,"/>
 <approved hash="104,1,347.98,127,4050DP,VDD,VCC,,,"/>
 <approved hash="104,1,345.44,58.42,U$2,J1-P15,GND,,,"/>
-<approved hash="104,1,345.44,63.5,U$2,J1-P18,VCC,,,"/>
 <approved hash="104,1,386.08,45.72,U$2,J2-P6,5V,,,"/>
 <approved hash="104,1,386.08,55.88,U$2,J2-P15,GND,,,"/>
-<approved hash="104,1,386.08,60.96,U$2,J2-P16,VCC,,,"/>
 <approved hash="104,1,386.08,58.42,U$2,J2-P17,GND,,,"/>
-<approved hash="104,1,386.08,63.5,U$2,J2-P18,VCC,,,"/>
 <approved hash="104,1,35.56,157.48,U$8,V+,VCC,,,"/>
 <approved hash="104,1,231.14,233.68,MAX16054,VCC,V_BATT,,,"/>
 <approved hash="104,1,223.52,38.1,U$9,IN,VIN,,,"/>
